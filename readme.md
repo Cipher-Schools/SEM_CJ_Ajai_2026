@@ -1,9 +1,4 @@
 
----
-
-
-
-```
 # 🚀 SEM_CJ_AJAI_2026
 
 Welcome to the Java Core Practice Repository 👨‍💻🔥
@@ -159,8 +154,9 @@ git push origin solution-DD-MM-YYYY-yourname
 1. Go to your forked repository on GitHub.
 2. Click **Compare & Pull Request**.
 3. Add a proper title:
-   
+
    Example:
+
 ```
 
 Solution for 17-02-2026 - Rahul
@@ -185,17 +181,12 @@ Done ✅
 
 ## 🎯 Goal
 
-Solve daily.  
-Push daily.  
-Improve daily.  
+Solve daily.
+Push daily.
+Improve daily.
 
 Consistency is more important than motivation.
 
 ---
 
 Maintained by: Ajai Raj
-```
-
----
-
-If you want, I can also give you a **very short beginner Git cheat sheet** to add below this so they never get confused.
