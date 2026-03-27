@@ -1,20 +1,22 @@
 @FunctionalInterface
 interface Demo 
 {
-	void dis(int i);
+	void dis(int i, int j);
 }
 
-// ()->{ }
-
+// class Demo2 implements Demo{
+//   @Override
+//   public void dis(){
+//     System.out.println("hiii");
+//   }
+// }
 public class Main {
     public static void main(String[] args)
     {
-      Demo o= (i)->{
-        //  public void dis(){
-            System.out.println("Hiii"+i);
-          // }
-      };
-      o.dis(23);
+     Demo o = (w,r)->{
+      System.out.println("hi"+w+r);
+     };
+     o.dis(1,4);
     }
 }
 
@@ -39,7 +41,7 @@ public class Main {
 
 
 
-// Anonymous Inner class
+// // Anonymous Inner class
 // @FunctionalInterface
 // interface Demo 
 // {
@@ -62,7 +64,7 @@ public class Main {
 
 
 
-// @FunctionalInterface
+// // @FunctionalInterface
 // interface Demo 
 // {
 // 	void dis();
