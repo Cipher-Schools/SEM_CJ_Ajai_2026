@@ -1,28 +1,70 @@
-@FunctionalInterface
-interface Demo 
+public class Main
 {
-	void dis(int i, int j);
-}
-
-// class Demo2 implements Demo{
-//   @Override
-//   public void dis(){
-//     System.out.println("hiii");
-//   }
-// }
-public class Main {
-    public static void main(String[] args)
-    {
-     Demo o = (w,r)->{
-      System.out.println("hi"+w+r);
-     };
-     o.dis(1,4);
+    public static void check(int a){
+        if(a<18){
+            throw new ArithmeticException("this is 1st");
+        }else{
+            throw new ArrayIndexOutOfBoundsException("this is 2nd");
+        }
     }
+	public static void main(String[] args) {
+// 		System.out.println("Hello World");
+      
+      try{
+          check(12);
+      }
+      catch(Exception e){
+          System.out.println(e);
+      }
+      finally{
+          System.out.println("finally");
+      }
+
+	}
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  class Demo implements AutoCloseable{
+    
+//     public void open(){
+//     System.out.println("open");
+//     }
+
+//     public void close(){ //override
+//         System.out.println("Closed");
+//     }
+// }
+// public class Main
+// {
+// 	public static void main(String[] args) {
+// 	 try(Demo o = new Demo()){
+//        o.open();
+//      }
+//      finally{
+//         System.out.println("name");
+//      }
+//     //  o.close();
+// 	}
+// }
 
 
 
